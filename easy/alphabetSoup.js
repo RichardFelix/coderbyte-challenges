@@ -26,7 +26,7 @@ function AlphabetSoup(str) {
         tmp.splice(minLocation,1);
     }
 
-    return str;
+    return str.join("");
 }
 
 console.log(AlphabetSoup("coderbyte"));

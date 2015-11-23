@@ -5,7 +5,7 @@ function WordCount(str) {
     for(var x = 0; x < str.length; x++){
         if(str.length === 0 )
             return 0;
-        if(str[x] == ' ')
+        if(str[x] == ' ' && str[x+1] != ' ')
             wordCount++;
     }
     

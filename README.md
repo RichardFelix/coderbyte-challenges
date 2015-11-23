@@ -1,4 +1,4 @@
-# CoderByte Challagnes #
+# CoderByte Challenges #
 
 Doing mental push ups with Javascript and speed in mind.
 

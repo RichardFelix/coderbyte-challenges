@@ -1,10 +1,29 @@
 function WordCount(str) { 
 
-    str = str.split(" ");
-    str = str.length;
+    var wordCount = 1;
     
-    return str;     
+    for(var x = 0; x < str.length; x++){
+        if(str.length === 0 )
+            return 0;
+        if(str[x] == ' ')
+            wordCount++;
+    }
+    
+    return wordCount;
 }
    
 
 console.log(WordCount("Hello World"));
+
+
+/************* Easy Way ******************/
+// function WordCount(str) { 
+
+//     str = str.split(" ");
+//     str = str.length;
+    
+//     return str;     
+// }
+   
+
+// console.log(WordCount("Hello World"));

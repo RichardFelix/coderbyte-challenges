@@ -1,0 +1,20 @@
+5 - Have the function DivisionStringified(num1,num2) take both parameters being passed, divide num1 by num2, and print the result as a string with properly formatted commas. Make sure all your answers are converted to Integers (ie. 2 / 3 should output "1"). For example: if num1 is 123456789 and num2 is 10000 the output should be "12,345". Use the Parameter Testing feature in the box below to test your code with different arguments. Do not modify the function name within the code. Do not put any code outside of the function and use the print keyword to print your answer from within the function.
+ 
+ 
+March
+ 
+1 - Have the function CountingMinutesI(str) take the str parameter being passed which will be two times (each properly formatted with a colon and am or pm) separated by a hyphen and print the total number of minutes between the two times. The time will be in a 12 hour clock format. For example: if str is 9:00am-10:00am then the output should be 60. If str is 1:00pm-11:00am the output should be 1320. Use the Parameter Testing feature in the box below to test your code with different arguments. Do not modify the function name within the code. Do not put any code outside of the function and use the print keyword to print your answer from within the function.
+ 
+ 
+May
+ 
+1 - Have the function MeanMode(arr) take the array of numbers stored in arr and print 1 if the mode equals the mean, 0 if they don't equal each other (ie. [5, 3, 3, 3, 1] should print 1 because the mode (3) equals the mean (3)). The array will not be empty, will only contain positive integers, and will not contain more than one mode. When testing arrays in Javascript with the Parameter Testing feature, simply enter in numbers separated by commas, like so: 5, 10, 15, etc. Although in Python you need the brackets. Do not modify the function name within the code. Do not put any code outside of the function and use the print keyword to print your answer from within the function.
+ 
+2 - Have the function DashInsert(num) insert dashes ('-') between each two odd numbers in num. For example: if num is 454793 the output should be 4547-9-3. Don't count zero as a negative number. Use the Parameter Testing feature in the box below to test your code with different arguments. Do not modify the function name within the code. Do not put any code outside of the function and use the print keyword to print your answer from within the function.
+ 
+August
+ 
+1 - Have the function SwapCase(str) take the str parameter and swap the case of each character. For example: if str is "Hello World" the output should be hELLO wORLD. Let numbers and symbols stay the way they are. Use the Parameter Testing feature in the box below to test your code with different arguments. Do not modify the function name within the code. Do not put any code outside of the function and use the print keyword to print your answer from within the function.
+ 
+
+    2 - Have the function NumberSearch(str) take the str parameter, search for all the numbers in the string, add them together, then print that final number. For example: if str is "88Hello 3World!" the output should be 91. You will have to differentiate between single digit numbers and multiple digit numbers like in the example above. So "55Hello" and "5Hello 5" should print two different answers. Each string will contain at least one letter or symbol. Use the Parameter Testing feature in the box below to test your code with different arguments. Do not modify the function name within the code. Do not put any code outside of the function and use the print keyword to print your answer from within the function.

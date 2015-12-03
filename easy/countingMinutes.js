@@ -77,7 +77,7 @@ function CountingMinutesI(str){
         timeResult = (tillNoon + afterNoon) * 60 + minsResult;
     }
     
-    return timeResult;
+     return timeResult;
 }
 
 console.log(CountingMinutesI("1:10am-1:20pm"));

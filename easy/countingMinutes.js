@@ -18,9 +18,9 @@ function CountingMinutesI(str){
                     hours_1.push(str.charAt(x));
             }else{
                 if(dash == true)
-                    mins.push(parseInt(str.charAt(x)));
-                else
                     mins_2.push(parseInt(str.charAt(x)));
+                else
+                    mins.push(parseInt(str.charAt(x)));
             }
         }else if(str.charAt(x) == 'a' || str.charAt(x) == 'm' || str.charAt(x) == 'p'){
             if(dash == true)
@@ -34,19 +34,50 @@ function CountingMinutesI(str){
             colon = true;
         }
     }
+    
+    mins = parseInt(mins.join(""));
+    mins_2 = parseInt(mins_2.join(""));
+    hours_1 = parseInt(hours_1.join(""));
+    hours_2 = parseInt(hours_2.join(""));
+    
+    var minsResult = 0,
+        hoursResult =0,
+        timeResult = 0,
+        tillNoon = 0,
+        afterNoon = 0,
+        hoursResult = hours_2 - hours_1;
 
     if( am_1.join("") == am_2.join("")){
-        var minsResult = parseInt(mins.join("")) + parseInt(mins_2.join("")),
-            hoursResult = 60 * (parseInt(hours_2.join("")) - parseInt(hours_1.join(""))),
-            timeResult = minsResult + hoursResult;
+        
+        if(hoursResult > 0)
+            hoursResult *= 60;
+        
+        if(mins > mins_2){
+            minsResult = mins - mins_2;
+            timeResult = hoursResult - minsResult;
+        }else{
+            minsResult = mins_2 - mins;
+            timeResult = hoursResult + minsResult;
+        }
+
     }else{
-        var tillNoon = 12 - parseInt(hours_1.join("")),
-            afterNoon = parseInt(hours_2.join("")),
-            minsResult = parseInt(mins.join("")) + parseInt(mins_2.join("")),
-            timeResult = (tillNoon + afterNoon) * 60 + minsResult;
+        
+        if(hours_1 == 12)
+            tillNoon = 12
+        else
+            tillNoon = 12 - hours_1;
+        
+        afterNoon = hours_2;
+        
+        if(mins > mins_2)
+            timeResult = hoursResult - minsResult;
+        else
+            minsResult = mins_2 - mins;
+        
+        timeResult = (tillNoon + afterNoon) * 60 + minsResult;
     }
     
     return timeResult;
 }
 
-console.log(CountingMinutesI("10:05am-3:00pm"));
+console.log(CountingMinutesI("1:10am-1:20pm"));
